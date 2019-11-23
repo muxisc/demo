@@ -20,6 +20,8 @@ public class HelloController {
         String name = userService.getById(1).getName();
         modelAndView.addObject("key", "您好！"+ name);
 
+        System.out.println("SpringBoot热部署1111");
+
         return modelAndView;
     }
 

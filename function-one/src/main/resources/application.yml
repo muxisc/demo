@@ -28,3 +28,13 @@ spring:
 mybatis:
   mapper-locations: classpath:mapper/*.xml    #配置映射文件
   type-aliases-package: entity   #配置实体类
+# Apollo配置管理
+app:
+  id: function-one      #如果不想去读apollo配置，改成function-onexxx
+apollo:
+  meta: http://localhost:8080
+  bootstrap:
+    enabled: true
+    namespaces: application, TEST1.common     #如果不想去读apollo配置，改成TEST1.commonxxx
+    eagerLoad:
+      enabled: true

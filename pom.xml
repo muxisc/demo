@@ -17,6 +17,7 @@
         <module>common</module>
         <module>function-one</module>
         <module>function-two</module>
+        <module>dubbo-provider</module>
     </modules>
 
     <!-- 本项目的父模块使用spring-boot框架 -->
@@ -106,6 +107,20 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>${alibaba.druid.version}</version>
+        </dependency>
+
+        <!-- dubbo -->
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>0.2.0</version>
+        </dependency>
+
+        <!-- 引入zookeeper的依赖，和服务器上的zookeeper版本对应 -->
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>0.9</version>
         </dependency>
 
     </dependencies>

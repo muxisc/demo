@@ -1,27 +1,40 @@
+#java
 *.class
+/classes
+
+#package file
 *.jar
 *.war
 *.ear
+*.zip
+*.tar.gz
+*.rar
+
+#Intellij idea
+.idea/
+/idea/
 *.ids
 *.iml
 *.ipr
 *.iws
-!.gitignore
+
+#eclipse ignore
 .classpath
 .settings/
 .project
-.idea/
+
+# system ignore
 .DS_Store
-.slcache/
-/bin
-/classes
-/target
+Thumbs.db
 
-upload/
-out/
-logs/
-
-target/
-**/logs/
-**/node_modules/
+#maven ignore
+build/
 **/target
+
+# temp file
+*.log
+**/logs/
+
+
+
+

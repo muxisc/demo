@@ -20,7 +20,7 @@ public class UserController {
 
     @GetMapping("/getList")
     public List<UserEntity> getList(){
-        System.out.println("hhh");
+
         return userService.getList();
     }
 

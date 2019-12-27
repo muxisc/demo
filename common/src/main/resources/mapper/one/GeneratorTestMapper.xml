@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.one.GeneratorTestMapper">
+  <resultMap id="BaseResultMap" type="entity.one.GeneratorTest">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="xxx_date" jdbcType="DATE" property="xxxDate" />
+    <result column="xxx_time" jdbcType="TIMESTAMP" property="xxxTime" />
+    <result column="context" jdbcType="LONGVARCHAR" property="context" />
+  </resultMap>
+</mapper>

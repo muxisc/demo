@@ -13,8 +13,16 @@
         <property name="beginningDelimiter" value="`" />
         <property name="endingDelimiter" value="`" />
 
+        <!-- 生成的POJO实现java.io.Serializable接口 -->
+        <!--<plugin type="org.mybatis.generator.plugins.SerializablePlugin" />-->
+
         <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
             <property name="mappers" value="tk.mybatis.mapper.common.Mapper" />
+        </plugin>
+
+        <!-- mybatis-generator整合lombok -->
+        <plugin type="org.mybatis.generator.plugins.LombokPlugin" >
+            <property name="hasLombok" value="true"/>
         </plugin>
 
         <commentGenerator >

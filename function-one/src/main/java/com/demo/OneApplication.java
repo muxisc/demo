@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan({"mapper"})  //项目启动时会扫描mapper包及子包的接口，否则会报错找不到mapper文件
-@EnableApolloConfig
+@EnableApolloConfig  //开启apollo
 public class OneApplication {
 
     public static void main(String[] args) {

@@ -102,6 +102,12 @@
             <version>${alibaba.druid.version}</version>
         </dependency>
 
+        <!-- Spring Security -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
     </dependencies>
     <!-- <scope>主要管理依赖的部署
        * compile，缺省值，适用于所有阶段，会随着项目一起发布。

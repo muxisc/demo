@@ -25,6 +25,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 
 		http.authorizeRequests()
+                //需要登录，并拥有着角色ADMIN的才可访问/admin/**（会报403，即授权失败，认证失败是401）；不用登录可直接访问/app/**
+                .antMatchers("/admin/**").hasRole("ADMIN")
+                .antMatchers("/user/**").hasRole("USER")
+                .antMatchers("/app/**").permitAll()
 				.anyRequest( ).authenticated()
 				.and()
 			.formLogin()

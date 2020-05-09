@@ -18,6 +18,12 @@ public class UserController {
     private UserService userService;
 
 
+    @GetMapping("/hello")
+    public String hello(){
+
+        return "hello，user";
+    }
+
     @GetMapping("/getList")
     public List<UserEntity> getList(){
 
